@@ -9,4 +9,4 @@ Responsive pricing table built with HTML & CSS.
 - Mobile-first approach
 
 ## Preview
-(assets/hasil-styling.png)
+![Preview](assets/hasil-styling.png)
