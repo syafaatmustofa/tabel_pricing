@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body,
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,
+            #4d9fec 50%,
+            white 50%);
+}
+
+.panel-background {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: #2f2f2f 0px 10px 20px -10px;
+}
+
+.collapse {
+    border-bottom: solid 1px #e0e0e0;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse:last-child {
+    border-bottom: none;
+}
+
+.icons {
+    max-width: 100%;
+}
+
+.judul {
+    color: #373738;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.list {
+    color: rgb(0, 89, 255);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-items {
+    padding: 15px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: solid 1px #e0e0e0;
+    list-style: none;
+
+}
+
+.list-items:last-child {
+    border-bottom: solid 1px #e0e0e0;
+}
+
+.collapse-footer {
+    margin-top: auto;
+}
+
+.text {
+    color: #4d9fec;
+    font-size: 32px;
+    display: block;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.btn {
+    background-color: #4d9fec;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #3a7db8;
+    cursor: pointer;
+}
+
+
+@media (min-width: 900px) {
+    .panel-background {
+        flex-direction: row;
+    }
+
+    .collapse {
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .collapse:last-child {
+        border-right: none;
+    }
+}
